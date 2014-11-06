@@ -1,0 +1,23 @@
+<!--<camelContext lazyLoadTypeConverters="true" autoStartup="false"
+              id="camelcontextbean" xmlns="http://camel.apache.org/schema/spring"/>
+
+<bean id="csvtopojoroute" class="main.csvexample.CsvToPojoRoute" lazy-init="true"/>-->
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+      http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+
+    <bean id="csvtopojoroute" class="main.csvexample.CsvToPojoRoute" lazy-init="true"/>
+
+
+
+<!-- Camel Configuration -->
+
+<camelContext lazyLoadTypeConverters="true" autoStartup="false"
+              id="camelcontextbean" xmlns="http://camel.apache.org/schema/spring">
+
+</camelContext>
+
+</beans>
